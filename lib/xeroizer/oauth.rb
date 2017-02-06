@@ -30,6 +30,7 @@ module Xeroizer
     class ConsumerKeyUnknown < StandardError; end
     class NonceUsed < StandardError; end
     class UnknownError < StandardError; end
+    class OrganisationOffline < StandardError; end
 
     unless defined? XERO_CONSUMER_OPTIONS
       XERO_CONSUMER_OPTIONS = {
